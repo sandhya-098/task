@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: #333;
+            min-height: 100vh;
+        }
+
+        .gallery img {
+            width: 30%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://i.pinimg.com/736x/12/d6/94/12d694f54fa6c8ddaf26a193c858de0c.jpg" alt="Image 1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1irakm2XKD0xniYh-97QAtfcJURglitNMCA&s" alt="Image 2">
+        <img src="https://i.pinimg.com/550x/e8/16/9f/e8169fca4f4f1a38b3bd5826f306a3e3.jpg" alt="Image 3">
+    </div>
+</body>
+</html>
